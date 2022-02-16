@@ -1,8 +1,6 @@
 package entities;
 
 public class ContaPoupanca {
-
-	private Conta contaCorrente;
 	private Conta conta;
 	private static int NUMEROPOUPANCA = 0;
 	
@@ -19,10 +17,6 @@ public class ContaPoupanca {
 
 	public void setConta(Conta conta) {
 		this.conta = conta;
-	}
-	
-	public void setContaCorrente(ContaCorrente contaCorrente) {
-		this.contaCorrente = contaCorrente;
 	}
 
 	

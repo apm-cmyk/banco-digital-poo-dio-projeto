@@ -3,7 +3,7 @@ package entities;
 public class Conta {
 	
 	
-	private int NUMEROCONTA = 0;
+	private static int NUMEROCONTA = 0;
 	protected Cliente cliente;
 	protected static final int AGENCIA = 2565;
 	private String senha;
@@ -13,7 +13,7 @@ public class Conta {
 		this.cliente = cliente;
 		this.setSenha(senha);
 		this.saldo = 0;
-		this.NUMEROCONTA += 1;
+		Conta.NUMEROCONTA += 1;
 	}
 	
 	public void saque(double valor) {
